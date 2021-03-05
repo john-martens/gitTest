@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Don't forget a title!</title>  
+    <link rel='stylesheet' href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script> 
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/hot-sneaks/jquery-ui.css" />
+</head>
+    
+<body>
+    
+    <div id="assignment">
+        <ul>
+            <li><a href='#assign1'>Gas Mileage</a></li>
+            <li><a href='#assign2'>Report Card</a></li>
+            <li><a href='#assign3'>Calorie Counter</a></li>
+        </ul>
+        
+        <div id='assign1'>
+            <h3>Mileage Calculator</h3>
+            <hr>
+            <p>Enter distance travelled: <input type='text' id="distancebox"></p>
+            <p>Enter size of gas tank (L): <input type='text' id="sizebox"></p>
+            <button id="milebtn">Calculate Mileage</button>
+            <button id="resetmile">Clear</button>
+            <hr>
+                <div id='milediv'>
+            
+                </div> 
+        </div>
+        
+        <div id='assign2'>
+            <h3>Average Calculator</h3>
+            <p>Quad 1, Week A: <input type='text' id="weekabox"></p>
+            <p>Quad 1, Week B: <input type='text' id="weekbbox"></p>
+            <p>Quad 1, Week C: <input type='text' id="weekcbox"></p>
+            <p>Quad 1, Week D: <input type='text' id="weekdbox"></p>
+            <button id="averagebtn">Average</button> 
+            <button id="resetaverage">Clear</button>
+            
+                <div id="averagediv">
+            
+                </div>
+        </div>
+        
+        <div id='assign3'>
+            <h3>Calorie Counter</h3>
+            <p>Enter food item: <input type='text' id="foodbox"></p>
+            <p>Enter calories: <input type='text' id="caloriebox"></p>
+            <button id="foodbtn">Add to list</button>
+            <button id="resetcalorie">Reset</button>
+            <hr>
+            
+            <p>Total calories: <span id="totalfood">0</span></p>
+            <select size= 10 id="foodlist">
+            
+            </select>
+            
+        </div>
+        
+    </div>
+    
+<script src="code.js"></script>
+
+</body>
+</html>
